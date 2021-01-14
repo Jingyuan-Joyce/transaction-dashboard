@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 style="color: purple; font-family:verdana; font-size:160%">Transaction Dashboard</h1>
+    <h4>Powered by: <img src="https://www.covalenthq.com/static/images/covalent-logo.png" alt="Covalent Logo" style="width:15%;height:15%;"></h4>
+    <br>
+    Enter the address: <input type="text" id="address" value="demo.eth">
+    <button onclick="getData()">Get Transactions</button>
+
+    <!-- <h3>Metadata</h3>
+    <ul id="metadata"></ul> -->
+    <style>
+      .content-table{
+        border-collapse: collapse;
+        margin: 25px 0;
+        front-size: 0.9em;
+        min-width: 400px;
+      }
+
+      .content-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+      }
+
+      .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+      
+      .content-table tbody tr: nth-of-type(even){
+        background-color: #f3f3f3;
+
+      }
+
+    </style>
+
+    <table id="tokenTable" class = "content-table">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Transaction</th>
+                <th>Success</th>
+                <th>Quote Value</th>
+                <th>Gas Fee</th>
+                
+                <!-- <th>Log Events</th> -->
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html
